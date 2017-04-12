@@ -1,0 +1,328 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: Roboto, Arial, sans-serif
+	overflow-x: hidden
+	background: #fff
+	
+
+.hidden
+	display: none
+
+.left
+	text-align: left
+
+.right
+	text-align: right
+
+.center
+	text-align: center
+
+/*SLIDER BX-SLIDER*/
+.wrap-slider
+	max-width: 980px
+	position: relative
+
+.btn__wrap
+	display: flex
+	max-width: 100%
+
+/*ICON*/
+.ic
+	position: absolute
+	display: inline-block
+	vertical-align: middle
+	text-transform: uppercase
+	&-search
+		top: 24px
+		background: url(../img/loop.png) no-repeat
+		width: 23px
+		height: 23px
+	&-enter
+		top: 28px
+		right: 2px
+		background: url(../img/login.png) no-repeat
+		width: 15px
+		height: 17px
+
+/*BUTTON*/
+.btn, a.btn
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	&:active, &:focus
+		outline: none
+		box-shadow: none
+.btn-big
+	padding: 10px 64px
+	//padding: 10px 52px
+	text-align: center
+	border-radius: 20px
+	border: 2px solid #f6f6f6
+	color: #f6f6f6
+	font-family: 'Roboto'
+	font-weight: 500
+	font-size: 18px
+	//line-height: 18px
+	text-transform: uppercase
+	background: transparent
+	& + .btn-big
+	margin-left: 20px
+	&:hover
+		background-color: #7570ff
+		color: #fff
+		border: 2px solid transparent
+		i
+			color: #fff
+	&:focus
+		background-color: #1ad5b1
+		border: none
+		color: #fff
+		i
+			color: #fff	
+	i
+		padding-right: 22px		
+.btn-big-green
+	border: 2px solid #1ad5b1
+	color: #1ad5b1
+	&:hover
+		border: 2px solid #1ad5b1
+		background-color: #1ad5b1
+		color: #fff
+.btn-big-fiolet
+	border: 2px solid #7570ff
+	color: #7570ff
+	margin-left: 0
+	max-width: 100%
+	&:hover
+		background-color: #7570ff
+		color: #fff
+		i
+			color: #fff
+	&:focus
+		background-color: #1ad5b1
+		border: none
+		color: #fff
+		i
+			color: #fff		
+	i
+		color: #171838
+.btn-big-paid
+	border: 2px solid transparent
+	background-color: #1ad5b1
+	color: #f6f6f6
+	margin-left: 10px
+	max-width: 100%
+	.fa-shopping-basket
+			display: none
+	&:hover
+		border: 2px solid transparent
+		.fa-shopping-cart
+			display: none
+		.fa-shopping-basket
+			display: inline-block
+			color: #fff	
+	i
+		color: #171838
+.btn-big-center
+	padding: 10px 64px
+	margin-bottom: 20px
+	text-align: center
+	margin-left: 0				
+	border-radius: 20px
+	border: 2px solid transparent
+	font-family: Roboto
+	font-size: 18px
+	font-weight: 500
+	text-transform: uppercase
+	background: transparent
+	&.border_grey
+		border: 2px solid #77778c
+		&:hover
+			border: 2px solid #77778c
+			background: #77778c
+			color: #fff
+	&.border_blue
+		border: 2px solid #7570ff
+		&:hover
+			border: 2px solid #7570ff
+			background: #7570ff
+			color: #fff
+	&.border_green
+		border: 2px solid #1ad5b1
+		&:hover
+			border: 2px solid #1ad5b1
+			background: #1ad5b1
+			color: #fff		
+
+.btn-big-contact
+	margin-top: 22px
+	max-width: 300px
+	width: 100%
+	text-align: center
+	border-radius: 20px
+	border: 2px solid #7570ff
+	font-size: 16px
+	line-height: 16px
+	text-transform: uppercase
+	color: #7570ff
+	font-family: Roboto
+	font-weight: 500
+	background: transparent
+	&:hover
+		border: 2px solid #7570ff
+		background-color: #7570ff
+		color: #fff
+	i
+		padding-right: 22px	
+		color: #171838
+		//font-family: "Font Awesome"
+		font-weight: 400
+/*BUTTON*/
+
+
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+
+.container
+	max-width: 980px
+
+
+/*HEADER*/
+header
+	.top-bar
+		padding: 23px 0
+		background-color: #f6f6f6
+
+/*LOGO*/
+.logo
+	//margin-right: 61px
+	a
+		display: block
+		img
+			width: 180px
+			height: 44px
+			margin: 0
+
+/*NAVIGATION*/	
+.nav
+	padding: 10px 0
+	//margin-right: 54px
+	.navbar
+		margin: 0
+		padding: 0
+		list-style: none
+		li
+			display: inline-block
+			font-size: 0
+			& + li
+				//margin-left: 20px
+				margin-left: 15px
+				//margin-left: 10px	
+			a
+				font-family: 'Roboto'
+				font-size: 14px
+				font-weight: 400
+				line-height: 18px
+				color: #77778c
+				&.active	
+					color: #1ad5b1
+					&:hover
+						color: #77778c
+				&:hover
+					color: #1ad5b1
+
+/*PHONE CALL ME!!!*/		
+.phone
+	//padding: 15px 0 34px
+	padding: 8px 0 34px
+    //margin-left: 64px
+	a
+		display: inline-block
+		color: #171838
+		font-family: 'Roboto'
+		font-size: 18px
+		font-weight: 400
+		//padding-right: 22px
+		position: relative
+		&:hover, &:focus
+			outline: none
+			text-decoration: none
+		i
+			position: absolute
+			top: 0
+			right: -36px	
+			display: inline-block
+			vertical-align: middle
+			width: 28px
+			height: 28px
+			line-height: 28px
+			border-radius: 14px
+			background-color: #7570ff
+			color: #fff
+			text-align: center
+			&:hover, &:focus
+				background-color: #1ad5b1
+
+/*MAIN*/
+.main-content
+	padding: 152px 0 192px
+	text-align: center
+	background: url(img/cosmos.png) 0 0 no-repeat
+	background-size: cover
+	//opacity: 0.25
+	position: relative
+	//&:before
+			content: ""
+			position: absolute
+			top: 50%//312px
+			left: 470px
+			width: 32px
+			height: 60px
+			background: url(../img/arrow-left.png) 0 0 no-repeat
+			//vertical-align: middle
+	//&:after
+			content: ""
+			position: absolute
+			top: 50%//312px
+			right: 470px
+			width: 32px
+			height: 60px
+			background: url(../img/arrow-right.png) 0 0 no-repeat
+	h1
+		margin: 0
+		margin-bottom: 74px
+		color: #ffffff
+		font-family: 'Roboto'
+		font-size: 44px
+		font-weight: 700
+		line-height: 56px
+		text-transform: uppercase
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			top: 146px
+			left: 50%//888px
+			margin-left: -70px
+			width: 140px
+			height: 1px
+			background: #ffffff
+	p
+		margin: 0
+		margin-bottom: 71px
+		color: #ffffff
+		font-family: 'Roboto'
+		font-size: 22px
+		font-weight: 300
+		line-height: 24px
+			

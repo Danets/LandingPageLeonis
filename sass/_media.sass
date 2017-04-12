@@ -1,0 +1,562 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and  (max-width : 1200px)
+	/**/
+	/*.bx-wrapper 
+		.bx-prev 
+		    background: url('images/arrow.png') no-repeat -5px -5px
+		    left: -50px
+		.bx-next 
+		    right: -50px
+		    background: url('images/arrow.png') no-repeat -47px -5px*/    
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.nav
+		padding: 10px 0
+		//margin-right: 54px
+		.navbar
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				display: inline-block
+				font-size: 0
+				margin-left: 20px
+				& + li
+					//margin-left: 20px
+					margin-left: 1px	
+
+	.task 
+		.task__wrap::after 
+		    content: ""
+		    position: absolute
+		    top: 5px
+		    right: 416px
+		    width: 1px
+		    height: 516px
+		    background-color: #fff
+		h3 
+		    margin: -4px 0 0
+		    color: #f6f6f6
+		    font-family: Roboto
+		    line-height: 18px
+		    font-size: 16px
+		    font-weight: 300
+		    text-align: center		    
+	
+
+	.baza
+		padding: 68px 0 75px
+		box-shadow: 0px 10px 8px rgba(0,0,0,0.15)
+		background-color: #ffffff
+		text-align: center
+		.baza__content
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 294px
+				left: 50%
+				margin-left: -40px
+				width: 80px
+				height: 1px
+				background-color: #7570ff
+			&:after
+				content: ""
+				position: absolute
+				bottom: -22px
+				left: 50%
+				margin-left: -40px
+				width: 80px
+				height: 1px
+				background-color: #7570ff			
+
+	.plan
+		.grafic 
+			margin-top: 270px
+			position: relative
+			right: 125px
+			top: 0
+			&:after
+				content: ""
+				position: absolute
+				top: 11px//12px
+				left: 22px
+				width: 181px
+				height: 1px
+				background: #fff     
+		.grafic2
+		    margin-left: 260px
+		    position: relative
+		    bottom: 124px
+		    left: 0
+
+	.product
+		.product__wrap
+			.circle 
+				width: 120px
+				height: 120px !important
+				line-height: 120px !important
+				background-color: #fff
+				border-radius: 50%
+				position: absolute
+				top: 130px
+				left: 50%
+				margin-left: -60px
+
+	.product__title::after 
+		content: ""
+		position: absolute
+		width: 140px
+		height: 140px
+		border-radius: 140px 140px 0 0
+		top: 120px
+		left: 50%
+		margin-left: -70px
+
+
+	.btn__group
+		margin-bottom: 20px
+		position: relative
+		text-align: center
+		.btn-big-center 
+			margin-bottom: 0
+
+
+	.forma
+		padding: 58px 0
+		background-color: #7570ff
+		h1
+			margin-top: 0
+			margin-bottom: 40px
+			color: #f6f6f6
+			font-family: Roboto
+			font-size: 24px
+			font-weight: 300
+			text-align: center
+		form
+			.btn-input
+				margin-right: 20px
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				max-width: 300px
+				width: 30%
+				text-align: center
+				border-radius: 20px
+				border: 1px solid #ffffff
+				background-color: #645fdb
+				text-align: left 
+				color: #f6f6f6
+				font-family: Roboto
+				font-size: 16px
+				font-weight: 400
+				padding-left: 22px	
+				&::placeholder
+					text-align: left 
+					color: #f6f6f6
+					font-family: Roboto
+					font-size: 16px
+					font-weight: 400
+				&:active, &:focus
+					outline: none	
+			.btn-submit
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				max-width: 300px
+				width: 30%
+				text-align: center
+				border-radius: 20px
+				border: 1px solid #ffffff
+				background-color: #f6f6f6
+				font-size: 16px
+				font-weight: 400
+				color: #7570ff
+				font-family: Roboto
+				&:active, &:focus
+					outline: none
+				&:hover
+					background-color: #1ad5b1
+					color: #f6f6f6
+				i
+					padding-right: 22px	
+					color: #171838
+	footer 
+		p.center 
+		    margin-top: 16px
+		    margin-bottom: 32px
+		    text-align: left
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+	/*PHONE CALL ME!!!*/		
+	.phone
+		//padding: 15px 0 34px
+		padding: 11px 0 34px
+	    //margin-left: 64px
+		a
+			display: inline-block
+			color: #171838
+			font-family: 'Roboto'
+			font-size: 13px
+			font-weight: 400
+			//padding-right: 22px
+			position: relative
+			i
+				position: absolute
+				top: -2px
+				right: -32px	
+				display: inline-block
+				vertical-align: middle
+				width: 28px
+				height: 28px
+				line-height: 28px
+				border-radius: 14px
+				background-color: #7570ff
+				color: #fff
+				text-align: center
+				&:hover
+					background-color: #1ad5b1
+
+	.bx-wrapper 
+		.bx-prev 
+		    left: 0//35px//-12px
+		.bx-next 
+		    right: 0//35px//-20px
+
+	.platform 
+		h1 
+		    margin-bottom: 27px
+		    color: #171838
+		    font-size: 24px
+		    line-height: 30px
+		    text-align: center
+	
+	.plan
+		.grafic 
+			margin-top: 270px
+			position: relative
+			right: 20px
+			top: 0
+			&:after
+				content: ""
+				position: absolute
+				top: 11px//12px
+				left: 22px
+				width: 64px
+				height: 1px
+				background: #fff 
+			span.dot
+				display: inline-block
+				font-size: 0
+				margin-right: 68px
+				border-radius: 50% 
+				width: 22px
+				height: 22px
+				background-color: #ffffff
+			span.dot__title:after
+				content: ""
+				position: absolute
+				top: -35px
+				left: 28px
+				width: 158px //55px
+				max-width: 181px
+				height: 1px
+				background: #fff
+				transform: rotate(-28deg)		
+		.grafic2 
+		    margin-left: 230px			    
+
+	 			    	    
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.logo
+		text-align: center	
+	
+	.nav
+		padding: 10px 0
+		//margin-right: 54px
+		.navbar
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				margin-left: 0
+				display: block
+				font-size: 0
+				& + li
+					margin-top: 10px
+
+	.phone
+		margin-right: 35px
+
+	.main-content 
+		h1::after 
+		    content: ""
+		    position: absolute
+		    top: 110%
+		    left: 50%
+		.btn-big
+			margin-bottom: 20px
+
+	.tabs 
+		.nav-tab 
+			li 
+				a 
+    				padding-bottom: 0
+	
+	.img__title
+			//display: inline-block
+			//font-size: 0
+			margin-left: 20px//0 !important
+			text-align: left 
+			h3, p
+				color: #77778c
+				font-family: Roboto
+				line-height: 22px
+				margin: 0
+			h3
+				font-size: 16px
+				font-weight: 500
+			p
+				font-size: 9px
+				font-weight: 400
+   	.blog 
+   		.tab-content
+		  	p.blog__title 
+			    text-align: center
+
+	.partner 
+		.partner__wrap
+			&:before
+				content: ""
+				position: absolute
+				top: 8px
+				left: -6px
+				width: 1px
+				height: 1470px
+				height: 102%
+				background-color: #7570ff  
+			h3 
+			    margin-bottom: 40px
+			    font-weight: 300
+			    font-size: 24px
+			    line-height: 30px
+			    position: relative
+			    padding-left: 6px
+
+	.partner__wrap 
+		h3::before 
+	    content: ""
+	    position: absolute
+	    top: 5px
+	    left: -16px !important
+	    width: 21px
+	    height: 21px		    
+		
+	.forma
+		padding: 58px 0
+		background-color: #7570ff
+		h1
+			margin-top: 0
+			margin-bottom: 40px
+			color: #f6f6f6
+			font-family: Roboto
+			font-size: 24px
+			font-weight: 300
+			text-align: center
+		form
+			display: flex
+			flex-direction: column
+			//justify-content: center
+			//align-items: center
+			.btn-input
+				margin-right: 20px
+				margin-bottom: 10px
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				max-width: 300px
+				width: 100%
+				text-align: center
+				border-radius: 20px
+				border: 1px solid #ffffff
+				background-color: #645fdb
+				text-align: left 
+				color: #f6f6f6
+				font-family: Roboto
+				font-size: 16px
+				font-weight: 400
+				padding-left: 22px	
+				&::placeholder
+					text-align: left 
+					color: #f6f6f6
+					font-family: Roboto
+					font-size: 16px
+					font-weight: 400
+				&:active, &:focus
+					outline: none	
+			.btn-submit
+				position: relative
+				display: inline-block
+				vertical-align: middle
+				max-width: 300px
+				width: 100%
+				text-align: center
+				border-radius: 20px
+				border: 1px solid #ffffff
+				background-color: #f6f6f6
+				font-size: 16px
+				font-weight: 400
+				color: #7570ff
+				font-family: Roboto
+				&:active, &:focus
+					outline: none
+				&:hover
+					background-color: #1ad5b1
+					color: #f6f6f6
+				i
+					padding-right: 22px	
+					color: #171838		    
+    
+	.btn-min
+    	padding: 10px 2px
+    	font-size: 16px
+    	margin-left: 2px
+    	i 
+    		padding-right: 8px
+    		padding-left: 6px
+			
+
+	.vertical 
+    	margin-left: -10000px
+
+@media only screen and (max-width : 360px)
+	.modal
+		overflow: scroll
+		.modal__close 
+		    margin-top: -30px
+		    margin-left: 240px
+
+	.bx-wrapper
+		.bx-controls-direction
+	  		a 
+			    position: absolute
+			    top: 50%
+			    margin-top: -110px
+
+	.about
+		.about__title 
+		    display: flex
+		    justify-content: center
+
+	.btn__group
+		.btn-big-center 
+    		margin-bottom: 10px
+
+	.blog 
+   		.tab-content 
+   			p.blog__title 
+   				text-align: center 	
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.btn-min
+    	padding: 10px 0
+    	font-size: 14px
+
+	.img__title 
+		h3 
+			//font-size: 16px !important
+		p
+			//font-size: 11px !important		
+	
+	.modal
+		overflow: scroll
+		.modal__close 
+		    margin-top: -30px
+		    margin-left: 200px
+
+	.modal 
+		form 
+			.btn-input 
+			    padding-left: 0
+			    text-align: center
+			.btn-submit 
+			    padding: 10px 0
+			    i
+			    	padding-right: 4px
+
+	.table__count 
+    	font-size: 14px
+
+	.bx-wrapper
+		.bx-controls-direction
+	  		a 
+			    position: absolute
+			    top: 50%
+			    margin-top: -220px
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
